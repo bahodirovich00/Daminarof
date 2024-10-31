@@ -1,5 +1,12 @@
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* necessary codes */
 * {
     margin: 0;
     padding: 0;
@@ -12,16 +19,51 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
 }
-
-
 
 a {
     color: #fff;
     text-decoration: none;
 }
+
+.active::before {
+    content: '';
+    position: absolute;
+    bottom: 2.1rem;
+    width: 100%;
+    height: 2px;
+    background-color: #fff311;
+}
+
+h2 {
+    color: #414141;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 45px;
+    position: relative;
+    color: #888;
+}
+
+.name::before {
+    position: absolute;
+    content: '';
+    top: 40%;
+    left: -45px;
+    transform: -50%;
+    height: 2px;
+    width: 30px;
+    background-color: #888;
+}
+
+/* header page */
 
 #header {
     position: relative;
@@ -149,6 +191,8 @@ a {
     margin-left: 10px;
 }
 
+/* header navigation bar */
+
 #header nav {
     background-color: blue;
     color: #fff;
@@ -176,15 +220,6 @@ a {
     position: relative;
 }
 
-#header nav .active::before {
-    content: '';
-    position: absolute;
-    bottom: 2.1rem;
-    width: 100%;
-    height: 2px;
-    background-color: #fff311;
-}
-
 #header nav ul a::before {
     content: '';
     position: absolute;
@@ -208,6 +243,8 @@ a {
     width: 30%;
     cursor: pointer;
 }
+
+/* header carusel */
 
 .header-carusel {
     height: 70%;
@@ -249,15 +286,16 @@ a {
 }
 
 .header-carusel-box h2 {
-    font-size: 32px;
-    text-transform: capitalize;
     margin-bottom: 20px;
+    color: white;
 }
 
 .header-carusel-box p {
     font-size: 18px;
     color: #ccc;
 }
+
+/* products page */
 
 #products {
     height: 70vh;
@@ -293,13 +331,6 @@ a {
     transform: -50%;
 }
 
-
-#products h2 {
-    color: #414141;
-    font-size: 32px;
-    text-transform: capitalize;
-}
-
 .products-box {
     width: 100%;
     padding: 15px 0;
@@ -332,8 +363,10 @@ a {
     font-weight: 600;
 }
 
+/* about page */
+
 #about {
-    margin-top: 5rem;
+    margin-top: 10rem;
     height: 90vh;
     display: flex;
     width: 100%;
@@ -355,25 +388,6 @@ a {
     width: 50%;
     padding: 0 4rem;
     color: #888;
-}
-
-.about-info .name {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
-    margin-left: 45px;
-    position: relative;
-}
-
-.about-info .name::before {
-    position: absolute;
-    content: '';
-    top: 40%;
-    left: -45px;
-    transform: -50%;
-    height: 2px;
-    width: 30px;
-    background-color: #888;
 }
 
 .about-info h2 {
@@ -404,4 +418,227 @@ a {
     border: 1px solid rgb(82, 82, 255);
     color: rgb(82, 82, 255);
     background-color: #fff;
+}
+
+/* blog page */
+
+#blog {
+    height: min-content;
+    background-color: #fff;
+    padding: 5rem 0;
+    box-shadow: 0px 1px 20px 1px #888;
+}
+
+#blog h2 {
+    margin: 2rem 0;
+}
+
+#blog .products-box {
+    width: 100%;
+}
+
+#blog .product {
+    box-shadow: none;
+    align-items: start;
+    width: 33%;
+    padding: 2rem 0;
+}
+
+#blog .product img {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#blog .product h4 {
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+#blog .product p {
+    text-align: left;
+}
+
+/* gallery page */
+
+
+#gallery {
+    height: min-content;
+    padding: 5rem 0;
+}
+
+#gallery .container {
+    position: relative;
+}
+
+#gallery h2 {
+    margin: 2rem 0 6rem 0;
+    font-size: 32px;
+}
+
+.gallery-images {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.gallery-images a {
+    width: 33%;
+    cursor: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-images img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease-in-out;
+}
+
+.blue-mask {
+    position: absolute;
+    background-color: rgb(0, 165, 165);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease-in-out;
+}
+
+.blue-mask img {
+    width: 25px;
+    height: auto;
+}
+
+.gallery-images a:hover .blue-mask{
+    opacity: 0.7;
+}
+
+.gallery-images a:hover img{
+    transform: scale(1.2);
+    transition: all .4s ease-in-out;
+}
+
+.gallery-images div {
+    position: relative;
+    width: 33%;  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery-images div a {
+    flex-grow: 1;
+}
+
+/* gallery page */
+
+#gallery .border {
+    height: 1px;
+    width: 100%;
+    background-color: #888;
+    position: absolute;
+    top: 40rem;
+}
+
+.gallery-info {
+    margin: 10rem 0;
+    gap: 1rem;
+    display: flex;
+}
+
+.gallery-info-1 {
+    width: 50%;
+}
+
+.gallery-info-1 h4 {
+    font-size: 20px;
+}
+
+.gallery-info-1 p {
+    margin: 2rem 0;
+    font-size: 16px;
+}
+
+.gallery-info-2 {
+    width: 50%;
+}
+
+.gallery-info-2 h4 {
+    font-size: 20px;
+}
+
+.gallery-info-2 p {
+    margin: 2rem 0;
+    font-size: 16px;
+}
+
+/* parters page */
+
+#partners {
+    background-color: #fff;
+    height: 100vh;
+    padding: 5rem 0;
+}
+
+.partners-advertisement {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+}
+
+#partners .right {
+    width: 50%;
+    background-color: rgb(114, 114, 255);
+    color: #fff;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#partners .right img {
+    padding: 0 2rem 1rem 2rem;
+    text-align: center;
+}
+
+#partners .right h4 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+#partners .right p {
+    font-size: 14px;
+}
+
+#partners .left {
+    width: 50%;
+    background-color: rgb(255, 186, 59);
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#partners .left img {
+    padding: 0 2rem 1rem 1rem;
+    text-align: center;
+}
+
+#partners .left h4 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+#partners .name {
+    margin: 3rem 0;
 }
