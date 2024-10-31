@@ -7,22 +7,25 @@
 </head>
 <body>
     <header id="header">
+        <img class="header-background" src="./images/header-background.png">
         <div class="container">
             <div class="header-info">
-                <img src="" alt="">
+                <div class="header-logo">
+                    <img src="./images/logo.png">
+                </div>
                 <div>
                     <div class="header-phone">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                        </svg>
-                        <div>
-                            <h4>+251116476449</h4>
+                        <img src="./images/phone.png">
+                        <div class="header-phone-info">
+                            <a href="tel:+251116476449">+251116476449</a>
                             <p>Phone</p>
-                        </div>    
+                        </div>
+
                     </div>
                     <div class="header-email">
-                        <div>
-                            <h4>info@daminarof.com</h4>
+                        <img src="./images/email.png">
+                        <div class="header-email-info">
+                            <a href="mailto:info@daminarof.com">info@daminarof.com</a>
                             <p>Email</p>
                         </div>
                     </div>
@@ -51,7 +54,10 @@
                         </ul>
                     </div>
                     <div class="header-btn">
-                        <button>Inquare now</button>
+                        <button>
+                            <p>Inquare now</p>
+                            <img class="arrow" src="./images/arrow.png">
+                        </button>
                     </div>
                 </div>
             </div><br>
@@ -65,10 +71,61 @@
                     <li><a href="#">contact us</a></li>
                 </ul>
                 <div class="navigation-search">
-                    <img src="./images/search.png">
+                    <a href="#"><img src="./images/search.png"></a>
                 </div>
             </nav>
+            <div class="header-carusel">
+                <div class="header-carusel-left"></div>
+                <div class="header-carusel-box">
+                    <span></span>
+                    <h2>largest agriculture products exporters from ethipoia</h2>
+                    <p>We are fastest growing Ethiopia based company that deals in exporting top quality agricultural products Across the Globe</p>
+                    <span class="darker-span"></span>
+                </div>
+                <div class="header-carusel-right"></div>
+            </div>
         </div>
     </header>
+    <section id="products">
+        <div class="container">
+            <p>latest</p>
+            <h2>products</h2>
+            <div class="products-box">
+                <div class="product">
+                    <img src="./images/product-1.png">
+                    <h4>RED KIDNEY</h4>
+                    <p>Ethiopian red kidney beans, HPS quality, New crop, free from fo</p>
+                    <a href="#">quick view</a>
+                </div>
+                <div class="product">
+                    <img src="./images/product-1.png">
+                    <h4>RED KIDNEY</h4>
+                    <p>Ethiopian red kidney beans, HPS quality, New crop, free from fo</p>
+                    <a href="#">quick view</a>
+                </div>
+                <div class="product">
+                    <img src="./images/product-1.png">
+                    <h4>RED KIDNEY</h4>
+                    <p>Ethiopian red kidney beans, HPS quality, New crop, free from fo</p>
+                    <a href="#">quick view</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-img">
+            <img src="./images/about-image.png">
+        </div>
+        <div class="about-info">
+            <p class="name">about</p>
+            <h2>Welcome to Daminarof</h2>
+            <p>Welcome to Daminarof! One of the leading agriculture product exporters in Ethiopia. We have been exporting agricultural commodities to the massive amount of customers and business partners in different corners of the world</p>
+            <p>As one of the most reliable and largest agricultural products exporters in Ethiopia our products are distribute worldwide wich includes bulk quantities of oilseeds, cereals, natural qum, organic pulses, and all kinds of species</p>
+            <button>read more</button>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
