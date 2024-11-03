@@ -586,7 +586,7 @@ h2 {
 
 #partners {
     background-color: #fff;
-    height: 100vh;
+    height: min-content;
     padding: 5rem 0;
 }
 
@@ -640,5 +640,109 @@ h2 {
 }
 
 #partners .name {
+    margin: 3rem 45px;
+}
+
+.partners-carusel {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
     margin: 3rem 0;
+}
+
+.carusel-box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 2px #888;
+}
+
+/* contact */
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.contact-email {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+
+.contact-email img {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9));
+    z-index: -1;
+}
+
+.contact-email h2, .contact-email p {
+    color: #fff;
+}
+
+.contact-email p::before {
+    background-color: #fff;
+}
+
+.contact-email input {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    width: 400px;
+    padding-bottom: 1rem;
+    color: white;
+    transition: all .4s ease-out;
+}
+
+.contact-email input:focus {
+    border-bottom: 1px solid rgb(255, 208, 0);
+}
+
+.contact-email input::placeholder {
+    text-transform: uppercase;
+    color: white;
+}
+
+.contact-email button {
+    width: 100px;
+    background-color: rgb(255, 208, 0);
+    padding: 1rem 4rem;
+    border: 1px solid rgb(255, 208, 0);
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    text-transform: uppercase;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.contact-email button:hover {
+    color: rgb(255, 208, 0);
+    background: none;
+    border: 1px solid rgb(255, 208, 0);
+}
+
+.contact-email div {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-email div input {
+    width: 190px;
 }
