@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominarof</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- fixed email button -->
+    <i class="fixed-email-button fa-regular fa-envelope"></i>
+
+    <!-- header -->
     <header id="header">
         <img class="header-background" src="./images/header-background.png">
         <div class="container">
@@ -29,76 +38,92 @@
                             <p>Email</p>
                         </div>
                     </div>
-                    <div class="header-links">
-                        <ul>
-                            <li>
-                                <a href="#">
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                     <div class="header-btn">
                         <button>
-                            <p>Inquare now</p>
+                            <p>Inquare now</p> 
                             <img class="arrow" src="./images/arrow.png">
                         </button>
                     </div>
                 </div>
             </div><br>
             <nav>
-                <ul>
-                    <li><a href="#" class="active">home</a></li>
-                    <li><a href="#">products</a></li>
-                    <li><a href="#">uk branch</a></li>
-                    <li><a href="#">faq</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact us</a></li>
-                </ul>
+                <div class="menu">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="#">home</a></li>
+                        <li class="menu-item"><a href="#">products</a></li>
+                        <li class="menu-item"><a href="#">uk branch</a></li>
+                        <li class="menu-item"><a href="#">faq</a></li>
+                        <li class="menu-item"><a href="#">about</a></li>
+                        <li class="menu-item"><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="menu-default">
+                    <ul>
+                        <li><a href="#" class="active">home</a></li>
+                        <li class="products-link"><a href="#products">product <i class="fa-solid fa-down-long"></i></a>
+                            <div class="product-menu">
+                                <ul>
+                                    <li><a href="#">product <img class="arrow" src="./images/arrow-white.png"></a></li>
+                                    <li><a href="#">product <img class="arrow" src="./images/arrow-white.png"></a></li>
+                                    <li><a href="#">product <img class="arrow" src="./images/arrow-white.png"></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#blog">uk branch</a></li>
+                        <li><a href="#gallery">faq</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact">contact us</a></li>
+                    </ul>
+                </div>
                 <div class="navigation-search">
-                    <a href="#"><img src="./images/search.png"></a>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </nav>
             <div class="header-carusel">
-                <div class="header-carusel-left"></div>
-                <div class="header-carusel-box">
-                    <span></span>
-                    <h2>largest agriculture products exporters from ethipoia</h2>
-                    <p>We are fastest growing Ethiopia based company that deals in exporting top quality agricultural products Across the Globe</p>
-                    <span class="darker-span"></span>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <span></span>
+                            <h2>largest agriculture products exporters from ethipoia</h2>
+                            <p>We are fastest growing Ethiopia based company that deals in exporting top quality agricultural products Across the Globe</p>
+                            <span class="darker-span"></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <span></span>
+                            <h2>largest agriculture products exporters from ethipoia</h2>
+                            <p>We are fastest growing Ethiopia based company that deals in exporting top quality agricultural products Across the Globe</p>
+                            <span class="darker-span"></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <span></span>
+                            <h2>largest agriculture products exporters from ethipoia</h2>
+                            <p>We are fastest growing Ethiopia based company that deals in exporting top quality agricultural products Across the Globe</p>
+                            <span class="darker-span"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="header-carusel-right"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> 
             </div>
         </div>
     </header>
+
+    <!-- products -->
     <section id="products">
         <div class="container">
             <p>latest</p>
             <h2>products</h2>
             <div class="products-box">
                 <div class="product">
-                    <img src="./images/product-1.png">
+                    <img src="./images/product-3.png">
                     <h4>RED KIDNEY</h4>
                     <p>Ethiopian red kidney beans, HPS quality, New crop, free from fo</p>
                     <a href="#">quick view</a>
                 </div>
                 <div class="product">
-                    <img src="./images/product-1.png">
+                    <img src="./images/product-2.png">
                     <h4>RED KIDNEY</h4>
                     <p>Ethiopian red kidney beans, HPS quality, New crop, free from fo</p>
                     <a href="#">quick view</a>
@@ -112,6 +137,8 @@
             </div>
         </div>
     </section>
+
+    <!-- about -->
     <section id="about">
         <div class="about-img">
             <img src="./images/about-image.png">
@@ -124,6 +151,8 @@
             <button>read more</button>
         </div>
     </section>
+
+    <!-- blog -->
     <section id="blog">
         <div class="container">
             <p class="name">lorem ipsum</p>
@@ -131,29 +160,37 @@
             <div class="products-box">
                 <div class="product">
                     <img src="./images/blog-img1.png" alt="">
-                    <h4>Top 5 Benefits Of Chia Seed Oil</h4>
-                    <p>Chia seed oil is a golden colored, nutrient rich, nutty tasting</p>
+                    <div class="blog-product-text">  
+                        <h4>Top 5 Benefits Of Chia Seed Oil</h4>
+                        <p>Chia seed oil is a golden colored, nutrient rich, nutty tasting</p>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="./images/blog-img1.png" alt="">
-                    <h4>Top 5 Benefits Of Chia Seed Oil</h4>
-                    <p>Chia seed oil is a golden colored, nutrient rich, nutty tasting</p>
+                    <img src="./images/blog-img2.png" alt="">
+                    <div class="blog-product-text">  
+                        <h4>Top 5 Benefits Of Chia Seed Oil</h4>
+                        <p>Chia seed oil is a golden colored, nutrient rich, nutty tasting</p>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="./images/blog-img1.png" alt="">
-                    <h4>Top 5 Benefits Of Chia Seed Oil</h4>
-                    <p>Chia seed oil is a golden colored, nutrient rich, nutty tasting</p>
+                    <img src="./images/blog-img3.png" alt="">
+                    <div class="blog-product-text">  
+                        <h4>Top 5 Benefits Of Chia Seed Oil</h4>
+                        <p>Chia seed oil is a golden colored, nutrient rich, nutty tasting</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- gallery -->
     <section id="gallery">
         <div class="container">
             <p class="name">some of our awesome</p>
             <h2>gallery</h2>
             <div class="gallery-images">
                 <a href="#">
-                    <img src="./images/gallery-img-1.png">
+                    <img src="./images/gallery-img-2.png">
                     <span class="blue-mask">
                         <img src="./images/zoom-in.png">
                     </span>
@@ -166,13 +203,13 @@
                         </span>
                     </a>
                     <a href="#">
-                        <img src="./images/gallery-img-1.png">
+                        <img src="./images/gallery-img-2.png">
                         <span class="blue-mask">
                             <img src="./images/zoom-in.png">
                         </span>
                     </a>
                     <a href="#">
-                        <img src="./images/gallery-img-1.png">
+                        <img src="./images/gallery-img-2.png">
                         <span class="blue-mask">
                             <img src="./images/zoom-in.png">
                         </span>
@@ -192,7 +229,7 @@
                 </a>
             </div>
             <span class="border"></span>
-            <div class="gallery-info">
+            <div class="gallery-info"">
                 <div class="gallery-info-1">
                     <h4>Now You Can Get The Best Quality Agricultural Products at Lowest Prices</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ad eveniet quia sequi mollitia sapiente ratione perspiciatis libero cumque corrupti?</p>
@@ -208,6 +245,8 @@
             </div>
         </div>
     </section>
+
+    <!-- partners -->
     <section id="partners">
         <div class="container">
             <div class="partners-advertisement">
@@ -229,22 +268,39 @@
             <p class="name">lorem ipsum</p>
             <h2>partners</h2>
             <div class="partners-carusel">
-                <div class="carusel-box">
-                    <img src="./images/partner-1.png" alt="">
-                </div>
-                <div class="carusel-box">
-                    <img src="./images/partner-2.png" alt="">
-                </div>
-                <div class="carusel-box">
-                    <img src="./images/partner-3.png" alt="">
-                </div>
-                <div class="carusel-box">
-                    <img src="./images/partner-4.png" alt="">
-                </div>
+                <div class="group">
+                    <div class="carusel-box">
+                        <img src="./images/partner-1.png" alt="">
+                    </div>
+                    <div class="carusel-box">
+                        <img src="./images/partner-2.png" alt="">
+                    </div>
+                    <div class="carusel-box">
+                        <img src="./images/partner-3.png" alt="">
+                    </div>
+                    <div class="carusel-box">
+                        <img src="./images/partner-4.png" alt="">
+                    </div>
+                </div>    
+                <div class="group">
+                    <div class="carusel-box">
+                        <img src="./images/partner-1.png" alt="">
+                    </div>
+                    <div class="carusel-box">
+                        <img src="./images/partner-2.png" alt="">
+                    </div>
+                    <div class="carusel-box">
+                        <img src="./images/partner-3.png" alt="">
+                    </div>
+                    <div class="carusel-box">
+                        <img src="./images/partner-4.png" alt="">
+                    </div>
+                </div>                
             </div>
         </div>
     </section> 
                 
+    <!-- contact -->
     <section id="contact">
         <div class="container">
             <div class="contact-email">
@@ -259,9 +315,47 @@
                 <button>send!</button>
                 <img src="./images/contact-email-bgi.png">
             </div>
-            <div class="contact-map"></div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11993.424429419345!2d69.2389621!3d41.2793536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a60121a4933%3A0x2e06e174eda6444b!2zRGF0YVNpdGUgVGVjaG5vbG9neSAtINCy0LXQsSDRgdGC0YPQtNC40Y8!5e0!3m2!1sru!2s!4v1730701884339!5m2!1sru!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="box">
+                    <h4>get in touch</h4>
+                    <ul>
+                        <li><a href="https://maps.app.goo.gl/KxGa7ZB1wpCcszfi8"><i class="fa-solid fa-location-dot"></i>Office number 501/2, Gurd Shola Road, Daminarof Building, Addis</a></li>
+                        <li><a href="tel:+251116476449"><i class="fa-solid fa-phone"></i> +251116476449</a></li>
+                        <li><a href="mailto:dannyfit3@yahoo.com"><i class="fa-solid fa-at"></i> dannyfit3@yahoo.com</a></li>
+                        <li><a href="info@dominarof.com"><i class="fa-solid fa-globe"></i> info@daminarof.com</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- footer -->
+    <footer>
+        <img src="./images/logo-dark.png">
+        <p class="footer-p">Daminarof one of the leading agriculture product expotrers in Ethiopia. The company is exporting agricultural commodities to customers across the globe. We deak in a varius agricultural products such as all kinds of Pulses, Oilseeds, Spices and Natural gum</p>
+        <span class="footer-border"></span>
+        <div class="footer-links"></div>
+        <p>Copyright© 2019 Daminarof.All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+    
 </body>
 </html>
 
