@@ -71,14 +71,20 @@
   .footer-border {
     width: 900px;
   }
+
+  #header .menu-default a.active::before {
+    bottom: 2rem;
+  }
 }
 
 @media (max-width: 992px) {
+
+
     body {
         width: 100%;
     }
     .container {
-        width: 700px;
+        max-width: 700px;
     }
 
     .footer-border {
@@ -108,6 +114,10 @@
         display: grid;
         justify-content: center;
         gap: 3rem;
+      }
+
+      .contact-email img {
+        width: 100%;
       }
     
       .contact-email img {
@@ -248,13 +258,32 @@
 
     
 
-    .container {
-        width: 700px;
-        margin: 0 auto;
-    }
+  .container {
+      width: 576px;
+  }
+
+  #header div .header-email {
+    display: none;
+  }
+
+  #header div .header-phone {
+    display: none;
+  }
+
+  .header-logo {
+    max-width: 20%;
+  }
+
+  .header-btn {
+    margin-left: 16rem;
+  }
 
     .footer-border {
-        width: 700px;
+        width: 576px;
+    }
+
+    .footer-p {
+      width: 576px;
     }
 
   .header-logo img {
@@ -270,6 +299,10 @@
   .gallery-info-1,
   .gallery-info-2 {
     width: 100%;
+  }
+
+  #gallery .border {
+    top: 26rem;
   }
 
 
@@ -350,10 +383,26 @@
 
   .contact-email img {
     min-height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .contact-email {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .swiper-button-next {
+    top: 22.5rem!important;
+  }
+
+  .swiper-button-prev {
+    top: 22.5rem!important;
   }
 }
 
 @media (max-width: 576px) {
+
 
     .about-info p {
         font-size: 16px;
@@ -361,7 +410,7 @@
     }
 
   .container {
-    width: 400px;
+    max-width: 400px;
   }
 
   .footer-border {
@@ -373,8 +422,12 @@
     width: 400px;
   }
 
-  .header-info {
-    display: none;
+  #header .header-logo {
+    min-width: 20%;
+  }
+
+  .header-btn {
+    margin-left: 7.5rem;
   }
 
   .contact-email {
@@ -489,6 +542,14 @@
 
 
 @media (max-width: 425px) {
+
+    #partners .right {
+    flex-direction: column;
+  }
+
+  #partners .left {
+    flex-direction: column;
+  }
     .container {
         max-width: 300px;
     }
@@ -503,6 +564,14 @@
 
     #header {
         height: 75vh;
+    }
+
+    #header .header-logo {
+      min-width: 30%;
+    }
+
+    .header-btn {
+      margin-left: 0.5rem;
     }
 
     .swiper-button-next {
@@ -541,4 +610,106 @@
       .swiper-button-prev {
         top: 21rem!important;
       }
+
+      .swiper-button-next {
+        top: 14.5rem!important;
+      }
+
+      .contact-map .box {
+        width: 90%;
+      }
+
+      footer img {
+        width: 40%;
+      }
+
+      #patrners img {
+        padding: 0;
+      }
+
+      #partners .right {
+        height: 100%;
+        width: 100%;
+      }
+}
+
+@media (max-width: 320px) {
+
+  .container {
+    max-width: 300px;
+  }
+
+  .footer-p {
+    width: 300px;
+  }
+
+  .footer-border {
+    width: 300px;
+  }
+
+  #products p {
+    left: -4rem;
+    font-size: 14px!important;
+  }
+
+  #products h2 {
+    font-size: 24px;
+    margin-left: 3rem;
+  }
+
+  .product h4{
+    font-size: 16px;
+  }
+
+  .product a{
+    font-size: 16px;
+  }
+
+  .contact-email input {
+    width: 250px;
+  }
+
+  .contact-email div input {
+    width: 250px;
+  }
+
+  #gallery .border {
+    top: 40rem;
+    width: 280px;
+  }
+
+  .swiper-button-prev {
+    top: 21.5rem!important;
+  }
+
+  .header-btn {
+    margin-left: 12px;
+  }
+
+  #blog .name {
+    left: -2rem;
+    font-size: 18px;
+  }
+
+  #blog h2 {
+    margin-left: 2rem;
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  #gallery .border {
+    top: 42rem;
+  }
+
+
+  #partners .name {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+  }
+
+
+  #partners h2 {
+    font-size: 22px;
+    margin: 0;
+  }
 }
